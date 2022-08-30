@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding=".1dp"
+      tools:context=".HomeActivity" >
+
+    <RelativeLayout
+        android:id="@+id/RlayoutHome"
+        android:layout_width="419dp"
+        android:layout_height="484dp"
+        android:background="@drawable/homebg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+      <TextView
+          android:id="@+id/textBroadVision"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@id/textHonestService"
+          android:layout_centerHorizontal="true"
+          android:gravity="center"
+          android:text="Broad Vision"
+          android:textColor="#FFFFFF"
+          android:textSize="48sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/textHonestService"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:gravity="center"
+          android:text="Honest Service"
+          android:textColor="#FFFFFF"
+          android:textSize="48sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/textGreatValue"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/textHonestService"
+          android:layout_centerHorizontal="true"
+          android:gravity="center"
+          android:text="Great Value"
+          android:textColor="#FFFFFF"
+          android:textSize="48sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/textDesc"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/textGreatValue"
+          android:layout_centerHorizontal="true"
+          android:gravity="center"
+          android:text="Our goal then and now is to provide quality on time projects"
+          android:textColor="#FFFFFF"
+          android:textSize="14sp" />
+
+      <Button
+          android:id="@+id/btnHomeGetInTouch"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/textDesc"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="20dp"
+          android:background="@color/melhamorange"
+          android:paddingLeft="20dp"
+          android:paddingRight="20dp"
+          android:text="Get In Touch"
+          android:textAllCaps="false"
+          android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textHomeWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RlayoutHome"
+        android:text="Welcome To The Melham Construction Corporation"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingLeft="25dp"/>
+
+    <TextView
+        android:id="@+id/textHomeWWBVision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHomeWelcome"
+        android:text="Where We Build Your Visions"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:paddingLeft="25dp"/>
+
+    <TextView
+        android:id="@+id/textHomeWWBVisionDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text="A growing construction company with diligence to improve client’s safety by applying up-to-date construction techniques with quality and efficiency creating an outstanding project."
+        android:textColor="#000000"
+        android:justificationMode="inter_word"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHomeWWBVision"/>
+
+    <TextView
+        android:id="@+id/textHomeCallUsToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="25dp"
+        android:drawableLeft="@drawable/ic_contactus_contact"
+        android:drawablePadding="10dp"
+        android:text="Call Us Today"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHomeWWBVisionDesc" />
+
+    <TextView
+        android:id="@+id/textHomeCallNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="25dp"
+        android:text="282947946"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHomeCallUsToday" />
+
+
+    <!--    Start Our Specialization | Linear Layout-->
+
+    <ImageView
+        android:id="@+id/ImgHomeSpecialPic"
+        android:layout_width="0dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/homespecializationtower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textHomeCallNumber" />
+
+    <TextView
+        android:id="@+id/textHomeOurSpecialization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Our Specialization"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ImgHomeSpecialPic" />
+
+    <LinearLayout
+        android:id="@+id/llspecialization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHomeOurSpecialization"
+        android:padding="10dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textMechanical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mechanical_eng"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="Mechanical Engineering"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textStructural"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_structure_eng"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="Structural Engineering"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textElectrical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_electrical_eng"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="Electrical Engineering"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textFireSafety"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_fire_safety"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="Fire and Safety"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textPlumbingServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_plumbing_service"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="Plumbing Services"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textCCTVServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_home_camera"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="CCTV Services"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textFitOutWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_fit_out_work"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="Fit-Out Work"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textArchitectural"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_architectural_design"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="Architectural Design"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textRecentProjects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llspecialization"
+        android:text="Our Recent Projects"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:paddingLeft="25dp"/>
+
+    <TextView
+        android:id="@+id/textRecentProjectsDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text="We carefully select the suitable material for the project we are carrying out, providing the best in class structures concerning durability."
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textRecentProjects" />
+
+    <Button
+        android:id="@+id/btnViewProjects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="View All Projects"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:background="@color/melhamorange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textRecentProjectsDesc"/>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
